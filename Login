@@ -15,7 +15,7 @@ class LoginTest:
         self.driver.find_element(By.ID, "password").send_keys(self.password)
         self.driver.find_element(By.ID, "submit").click()
 
-        time.sleep(5)  # wait to see result
+        time.sleep(5)
         print("Test finished. Current URL:", self.driver.current_url)
         self.driver.quit()
 
